@@ -1,54 +1,60 @@
 body.wm {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    font-family: Helvetica, Arial, sans-serif;
+    background-color: #f4f4f4;
     margin: 0;
     padding: 0;
-}
-
-#login-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
+}
+
+#login-wrapper {
+    width: 100%;
+    max-width: 400px;
 }
 
 #login-container {
-    background-color: white;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    width: 300px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
 }
 
 .main-logo {
     display: block;
-    margin: 0 auto 20px;
+    margin: 0 auto 30px;
     max-width: 200px;
 }
 
 .input-req-login {
+    font-size: 14px;
+    color: #333;
     margin-bottom: 5px;
 }
 
 .input-field-login {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 .std_textbox {
     width: 100%;
-    padding: 8px;
+    padding: 10px;
     border: 1px solid #ccc;
-    border-radius: 3px;
+    border-radius: 4px;
+    font-size: 14px;
 }
 
 #login_submit {
     width: 100%;
-    padding: 10px;
+    padding: 12px;
     background-color: #4CAF50;
     color: white;
     border: none;
-    border-radius: 3px;
+    border-radius: 4px;
     cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
 }
 
 #login_submit:hover {
@@ -56,19 +62,22 @@ body.wm {
 }
 
 .error-notice, .success-notice {
-    padding: 10px;
-    margin-bottom: 15px;
-    border-radius: 3px;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    font-size: 14px;
 }
 
 .error-notice {
     background-color: #ffebee;
     color: #c62828;
+    border: 1px solid #ef9a9a;
 }
 
 .success-notice {
     background-color: #e8f5e9;
     color: #2e7d32;
+    border: 1px solid #a5d6a7;
 }
 
 #locale-footer {
@@ -79,6 +88,8 @@ body.wm {
     background-color: #f8f8f8;
     padding: 10px;
     text-align: center;
+    font-size: 12px;
+    border-top: 1px solid #e0e0e0;
 }
 
 #locales_list {
@@ -90,6 +101,15 @@ body.wm {
 #locales_list li {
     display: inline;
     margin-right: 10px;
+}
+
+#locales_list li a {
+    color: #333;
+    text-decoration: none;
+}
+
+#locales_list li a:hover {
+    text-decoration: underline;
 }
 
 .copyright {
@@ -106,7 +126,7 @@ body.wm {
     transform: translate(-50%, -50%);
     background-color: white;
     padding: 20px;
-    border-radius: 5px;
+    border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     z-index: 1000;
 }
@@ -116,8 +136,21 @@ body.wm {
     margin: 5px;
 }
 
+.locale-cell a {
+    color: #333;
+    text-decoration: none;
+}
+
+.locale-cell a:hover {
+    text-decoration: underline;
+}
+
 @media (max-width: 480px) {
     #login-container {
-        width: 90%;
+        padding: 20px;
+    }
+
+    .std_textbox, #login_submit {
+        font-size: 16px;
     }
 }
