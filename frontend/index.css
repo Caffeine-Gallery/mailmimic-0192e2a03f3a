@@ -1,24 +1,28 @@
 body.wm {
     font-family: Helvetica, Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #ffffff;
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
     min-height: 100vh;
 }
 
 #login-wrapper {
-    width: 100%;
-    max-width: 400px;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
 }
 
 #login-container {
-    background-color: #ffffff;
+    background-color: #f7f7f7;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     padding: 30px;
+    width: 100%;
+    max-width: 400px;
 }
 
 .main-logo {
@@ -48,17 +52,18 @@ body.wm {
 #login_submit {
     width: 100%;
     padding: 12px;
-    background-color: #4CAF50;
+    background-color: #0078d4;
     color: white;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     font-size: 16px;
     font-weight: bold;
+    transition: background-color 0.3s;
 }
 
 #login_submit:hover {
-    background-color: #45a049;
+    background-color: #005a9e;
 }
 
 .error-notice, .success-notice {
@@ -80,16 +85,15 @@ body.wm {
     border: 1px solid #a5d6a7;
 }
 
-#locale-footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
+#footer {
     background-color: #f8f8f8;
+    border-top: 1px solid #e0e0e0;
+}
+
+#locale-footer {
     padding: 10px;
     text-align: center;
     font-size: 12px;
-    border-top: 1px solid #e0e0e0;
 }
 
 #locales_list {
@@ -103,20 +107,22 @@ body.wm {
     margin-right: 10px;
 }
 
-#locales_list li a {
-    color: #333;
+#locales_list li a, .copyright a {
+    color: #000;
     text-decoration: none;
+    transition: color 0.3s;
 }
 
-#locales_list li a:hover {
-    text-decoration: underline;
+#locales_list li a:hover, .copyright a:hover {
+    color: #ff6600;
 }
 
 .copyright {
     text-align: center;
-    margin-top: 20px;
+    padding: 10px;
     font-size: 12px;
     color: #666;
+    border-top: 1px solid #e0e0e0;
 }
 
 #locale-container {
@@ -137,12 +143,12 @@ body.wm {
 }
 
 .locale-cell a {
-    color: #333;
+    color: #000;
     text-decoration: none;
 }
 
 .locale-cell a:hover {
-    text-decoration: underline;
+    color: #ff6600;
 }
 
 @media (max-width: 480px) {

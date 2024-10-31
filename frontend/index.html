@@ -114,71 +114,73 @@
                     </div>
                 </div>
             </div>
-            <div id="locale-footer">
-                <div class="locale-container">
-                    <noscript>
-                        <form method="get" action=".">
-                            <select name="locale">
-                                <option value="">Change locale</option>
-                                <option value='en'>English</option>
-                                <option value='ar'>العربية</option>
-                                <option value='cs'>čeština</option>
-                                <option value='da'>dansk</option>
-                                <option value='de'>Deutsch</option>
-                                <option value='el'>Ελληνικά</option>
-                                <option value='es'>español</option>
-                                <option value='es_419'>español latinoamericano</option>
-                                <option value='es_es'>español de España</option>
-                                <option value='fi'>suomi</option>
-                                <option value='fil'>Filipino</option>
-                                <option value='fr'>français</option>
-                                <option value='he'>עברית</option>
-                                <option value='hu'>magyar</option>
-                                <option value='i_en'>i_en</option>
-                                <option value='id'>Bahasa Indonesia</option>
-                                <option value='it'>italiano</option>
-                                <option value='ja'>日本語</option>
-                                <option value='ko'>한국어</option>
-                                <option value='ms'>Bahasa Melayu</option>
-                                <option value='nb'>norsk bokmål</option>
-                                <option value='nl'>Nederlands</option>
-                                <option value='pl'>polski</option>
-                                <option value='pt'>português</option>
-                                <option value='pt_br'>português do Brasil</option>
-                                <option value='ro'>română</option>
-                                <option value='ru'>русский</option>
-                                <option value='sv'>svenska</option>
-                                <option value='th'>ไทย</option>
-                                <option value='tr'>Türkçe</option>
-                                <option value='uk'>українська</option>
-                                <option value='vi'>Tiếng Việt</option>
-                                <option value='zh'>中文</option>
-                                <option value='zh_tw'>中文（台湾）</option>
-                            </select>
-                            <button style="margin-left: 10px" type="submit">Change</button>
-                        </form>
-                        <style type="text/css">#mobilelocalemenu, #locales_list {display:none}</style>
-                    </noscript>
-                    <ul id="locales_list">
-                        <li><a href="/?locale=en">English</a></li>
-                        <li><a href="/?locale=ar">العربية</a></li>
-                        <li><a href="/?locale=cs">čeština</a></li>
-                        <li><a href="/?locale=da">dansk</a></li>
-                        <li><a href="/?locale=de">Deutsch</a></li>
-                        <li><a href="/?locale=el">Ελληνικά</a></li>
-                        <li><a href="/?locale=es">español</a></li>
-                        <li><a href="/?locale=es_419">español&nbsp;latinoamericano</a></li>
-                        <li><a href="javascript:void(0)" id="morelocale" onclick="toggle_locales(true)" title="More locales">…</a></li>
-                    </ul>
-                    <div id="mobilelocalemenu">Select a locale:
-                        <a href="javascript:void(0)" onclick="toggle_locales(true)" title="Change locale">English</a>
-                    </div>
+        </div>
+    </div>
+    <footer id="footer">
+        <div id="locale-footer">
+            <div class="locale-container">
+                <noscript>
+                    <form method="get" action=".">
+                        <select name="locale">
+                            <option value="">Change locale</option>
+                            <option value='en'>English</option>
+                            <option value='ar'>العربية</option>
+                            <option value='cs'>čeština</option>
+                            <option value='da'>dansk</option>
+                            <option value='de'>Deutsch</option>
+                            <option value='el'>Ελληνικά</option>
+                            <option value='es'>español</option>
+                            <option value='es_419'>español latinoamericano</option>
+                            <option value='es_es'>español de España</option>
+                            <option value='fi'>suomi</option>
+                            <option value='fil'>Filipino</option>
+                            <option value='fr'>français</option>
+                            <option value='he'>עברית</option>
+                            <option value='hu'>magyar</option>
+                            <option value='i_en'>i_en</option>
+                            <option value='id'>Bahasa Indonesia</option>
+                            <option value='it'>italiano</option>
+                            <option value='ja'>日本語</option>
+                            <option value='ko'>한국어</option>
+                            <option value='ms'>Bahasa Melayu</option>
+                            <option value='nb'>norsk bokmål</option>
+                            <option value='nl'>Nederlands</option>
+                            <option value='pl'>polski</option>
+                            <option value='pt'>português</option>
+                            <option value='pt_br'>português do Brasil</option>
+                            <option value='ro'>română</option>
+                            <option value='ru'>русский</option>
+                            <option value='sv'>svenska</option>
+                            <option value='th'>ไทย</option>
+                            <option value='tr'>Türkçe</option>
+                            <option value='uk'>українська</option>
+                            <option value='vi'>Tiếng Việt</option>
+                            <option value='zh'>中文</option>
+                            <option value='zh_tw'>中文（台湾）</option>
+                        </select>
+                        <button style="margin-left: 10px" type="submit">Change</button>
+                    </form>
+                    <style type="text/css">#mobilelocalemenu, #locales_list {display:none}</style>
+                </noscript>
+                <ul id="locales_list">
+                    <li><a href="/?locale=en">English</a></li>
+                    <li><a href="/?locale=ar">العربية</a></li>
+                    <li><a href="/?locale=cs">čeština</a></li>
+                    <li><a href="/?locale=da">dansk</a></li>
+                    <li><a href="/?locale=de">Deutsch</a></li>
+                    <li><a href="/?locale=el">Ελληνικά</a></li>
+                    <li><a href="/?locale=es">español</a></li>
+                    <li><a href="/?locale=es_419">español&nbsp;latinoamericano</a></li>
+                    <li><a href="javascript:void(0)" id="morelocale" onclick="toggle_locales(true)" title="More locales">…</a></li>
+                </ul>
+                <div id="mobilelocalemenu">Select a locale:
+                    <a href="javascript:void(0)" onclick="toggle_locales(true)" title="Change locale">English</a>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="copyright">Copyright© 2024 cPanel, L.L.C.
-    <br /><a href="https://go.cpanel.net/privacy" target="_blank">Privacy Policy</a></div>
+        <div class="copyright">Copyright© 2024 cPanel, L.L.C.
+        <br /><a href="https://go.cpanel.net/privacy" target="_blank">Privacy Policy</a></div>
+    </footer>
     <script type="module" src="index.js"></script>
 </body>
 </html>
