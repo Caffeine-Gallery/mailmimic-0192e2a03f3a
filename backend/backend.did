@@ -1,0 +1,13 @@
+type Email = 
+ record {
+   date: text;
+   from: text;
+   message: text;
+   subject: text;
+   to: text;
+ };
+service : {
+  getEmails: (text) -> (vec Email) query;
+  login: (text, text) -> (bool);
+  sendEmail: (text, text, text, text) -> ();
+}
